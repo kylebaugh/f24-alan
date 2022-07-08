@@ -16,15 +16,15 @@ app.post("/api/log", createLog);
 
 
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "../home.html"));
+  res.sendFile(path.join(__dirname, "../client/home.html"));
 });
 
 app.get("/css", (req, res) => {
-  res.sendFile(path.join(__dirname, "../home.css"));
+  res.sendFile(path.join(__dirname, "../client/home.css"));
 });
 
 app.get("/js", (req, res) => {
-  res.sendFile(path.join(__dirname, "../main.js"));
+  res.sendFile(path.join(__dirname, "../client/main.js"));
 });
 
 const port = process.env.PORT || 5432;
