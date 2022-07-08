@@ -4,7 +4,7 @@ const date = new Date();
 
 function newLog(body) {
   axios
-    .post("https://f24-alan.herokuapp.com//api/log", body)
+    .post("/api/log", body)
     .then(createLog(body));
 }
 
